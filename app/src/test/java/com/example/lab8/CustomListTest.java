@@ -38,4 +38,15 @@ public class CustomListTest {
         assertTrue(list.hasCity(city));
     }
 
+    @Test
+    void testDelete(){
+        City city = new City("Charlottetown", "Prince Edward Island");
+        list.add(city);
+        assertTrue(list.hasCity(city));
+        list.delete(city);
+        assertTrue(!(list.hasCity(city)));
+    }
+
+
+
 }
