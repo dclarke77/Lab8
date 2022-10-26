@@ -48,12 +48,12 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
     }
 
-//    @Test
-//    void testCountCities(){
-//        City city = new City("Charlottetown", "Prince Edward Island");
-//        list.add(city);
-//        assertTrue(2 == list.countCities());
-//    }
+    @Test
+    void testCountCities(){
+        City city = new City("Charlottetown", "Prince Edward Island");
+        list.add(city);
+        assertTrue(2 == list.countCities());
+    }
 
 
 
